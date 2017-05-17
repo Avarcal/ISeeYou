@@ -40,6 +40,7 @@
             this.phaseThreeButton = new System.Windows.Forms.Button();
             this.phaseFourButton = new System.Windows.Forms.Button();
             this.phaseFiveButton = new System.Windows.Forms.Button();
+            this.folderBrowser = new System.Windows.Forms.FolderBrowserDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +48,8 @@
             // 
             this.pictureBox.Location = new System.Drawing.Point(160, 12);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(700, 409);
+            this.pictureBox.Size = new System.Drawing.Size(694, 519);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox.TabIndex = 0;
             this.pictureBox.TabStop = false;
             this.pictureBox.Click += new System.EventHandler(this.pictureBox_Click);
@@ -64,7 +66,7 @@
             // 
             // leftEyeButton
             // 
-            this.leftEyeButton.Location = new System.Drawing.Point(160, 450);
+            this.leftEyeButton.Location = new System.Drawing.Point(160, 567);
             this.leftEyeButton.Name = "leftEyeButton";
             this.leftEyeButton.Size = new System.Drawing.Size(198, 66);
             this.leftEyeButton.TabIndex = 2;
@@ -74,7 +76,7 @@
             // 
             // discardEyeButton
             // 
-            this.discardEyeButton.Location = new System.Drawing.Point(414, 450);
+            this.discardEyeButton.Location = new System.Drawing.Point(414, 567);
             this.discardEyeButton.Name = "discardEyeButton";
             this.discardEyeButton.Size = new System.Drawing.Size(198, 66);
             this.discardEyeButton.TabIndex = 3;
@@ -84,7 +86,7 @@
             // 
             // rightEyeButton
             // 
-            this.rightEyeButton.Location = new System.Drawing.Point(662, 450);
+            this.rightEyeButton.Location = new System.Drawing.Point(662, 567);
             this.rightEyeButton.Name = "rightEyeButton";
             this.rightEyeButton.Size = new System.Drawing.Size(198, 66);
             this.rightEyeButton.TabIndex = 4;
@@ -114,7 +116,7 @@
             // 
             // phaseOneButton
             // 
-            this.phaseOneButton.Location = new System.Drawing.Point(160, 545);
+            this.phaseOneButton.Location = new System.Drawing.Point(160, 671);
             this.phaseOneButton.Name = "phaseOneButton";
             this.phaseOneButton.Size = new System.Drawing.Size(77, 52);
             this.phaseOneButton.TabIndex = 7;
@@ -124,7 +126,7 @@
             // 
             // phaseTwoButton
             // 
-            this.phaseTwoButton.Location = new System.Drawing.Point(310, 545);
+            this.phaseTwoButton.Location = new System.Drawing.Point(310, 671);
             this.phaseTwoButton.Name = "phaseTwoButton";
             this.phaseTwoButton.Size = new System.Drawing.Size(77, 52);
             this.phaseTwoButton.TabIndex = 8;
@@ -134,7 +136,7 @@
             // 
             // phaseThreeButton
             // 
-            this.phaseThreeButton.Location = new System.Drawing.Point(469, 545);
+            this.phaseThreeButton.Location = new System.Drawing.Point(462, 671);
             this.phaseThreeButton.Name = "phaseThreeButton";
             this.phaseThreeButton.Size = new System.Drawing.Size(77, 52);
             this.phaseThreeButton.TabIndex = 9;
@@ -144,7 +146,7 @@
             // 
             // phaseFourButton
             // 
-            this.phaseFourButton.Location = new System.Drawing.Point(624, 545);
+            this.phaseFourButton.Location = new System.Drawing.Point(626, 671);
             this.phaseFourButton.Name = "phaseFourButton";
             this.phaseFourButton.Size = new System.Drawing.Size(77, 52);
             this.phaseFourButton.TabIndex = 10;
@@ -154,7 +156,7 @@
             // 
             // phaseFiveButton
             // 
-            this.phaseFiveButton.Location = new System.Drawing.Point(783, 545);
+            this.phaseFiveButton.Location = new System.Drawing.Point(783, 671);
             this.phaseFiveButton.Name = "phaseFiveButton";
             this.phaseFiveButton.Size = new System.Drawing.Size(77, 52);
             this.phaseFiveButton.TabIndex = 11;
@@ -166,7 +168,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1029, 625);
+            this.ClientSize = new System.Drawing.Size(1029, 735);
             this.Controls.Add(this.phaseFiveButton);
             this.Controls.Add(this.phaseFourButton);
             this.Controls.Add(this.phaseThreeButton);
@@ -200,6 +202,7 @@
         private System.Windows.Forms.Button phaseThreeButton;
         private System.Windows.Forms.Button phaseFourButton;
         private System.Windows.Forms.Button phaseFiveButton;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowser;
     }
 }
 
