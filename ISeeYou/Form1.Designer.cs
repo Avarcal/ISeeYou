@@ -122,7 +122,7 @@
             this.phaseOneButton.TabIndex = 7;
             this.phaseOneButton.Text = "1";
             this.phaseOneButton.UseVisualStyleBackColor = true;
-            this.phaseOneButton.Click += new System.EventHandler(this.phaseOneButton_Click);
+            this.phaseOneButton.Click += new System.EventHandler(this.setPhase_Click);
             // 
             // phaseTwoButton
             // 
@@ -132,7 +132,7 @@
             this.phaseTwoButton.TabIndex = 8;
             this.phaseTwoButton.Text = "2";
             this.phaseTwoButton.UseVisualStyleBackColor = true;
-            this.phaseTwoButton.Click += new System.EventHandler(this.phaseTwoButton_Click);
+            this.phaseTwoButton.Click += new System.EventHandler(this.setPhase_Click);
             // 
             // phaseThreeButton
             // 
@@ -142,7 +142,7 @@
             this.phaseThreeButton.TabIndex = 9;
             this.phaseThreeButton.Text = "3";
             this.phaseThreeButton.UseVisualStyleBackColor = true;
-            this.phaseThreeButton.Click += new System.EventHandler(this.phaseThreeButton_Click);
+            this.phaseThreeButton.Click += new System.EventHandler(this.setPhase_Click);
             // 
             // phaseFourButton
             // 
@@ -152,7 +152,7 @@
             this.phaseFourButton.TabIndex = 10;
             this.phaseFourButton.Text = "4";
             this.phaseFourButton.UseVisualStyleBackColor = true;
-            this.phaseFourButton.Click += new System.EventHandler(this.phaseFourButton_Click);
+            this.phaseFourButton.Click += new System.EventHandler(this.setPhase_Click);
             // 
             // phaseFiveButton
             // 
@@ -162,7 +162,7 @@
             this.phaseFiveButton.TabIndex = 11;
             this.phaseFiveButton.Text = "5";
             this.phaseFiveButton.UseVisualStyleBackColor = true;
-            this.phaseFiveButton.Click += new System.EventHandler(this.phaseFiveButton_Click);
+            this.phaseFiveButton.Click += new System.EventHandler(this.setPhase_Click);
             // 
             // Form1
             // 
