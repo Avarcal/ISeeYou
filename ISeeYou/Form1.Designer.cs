@@ -41,6 +41,7 @@
             this.phaseFourButton = new System.Windows.Forms.Button();
             this.phaseFiveButton = new System.Windows.Forms.Button();
             this.folderBrowser = new System.Windows.Forms.FolderBrowserDialog();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -164,11 +165,22 @@
             this.phaseFiveButton.UseVisualStyleBackColor = true;
             this.phaseFiveButton.Click += new System.EventHandler(this.setPhase_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(875, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(142, 66);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Wykryj naczynia krwionośne";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1029, 735);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.phaseFiveButton);
             this.Controls.Add(this.phaseFourButton);
             this.Controls.Add(this.phaseThreeButton);
@@ -203,6 +215,7 @@
         private System.Windows.Forms.Button phaseFourButton;
         private System.Windows.Forms.Button phaseFiveButton;
         private System.Windows.Forms.FolderBrowserDialog folderBrowser;
+        private System.Windows.Forms.Button button1;
     }
 }
 

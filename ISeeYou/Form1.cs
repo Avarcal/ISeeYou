@@ -17,6 +17,7 @@ namespace ISeeYou
         List<string> filenames = new List<string>();
         List<Entry> entries = new List<Entry>();
         Entry currentEntry;
+        private VesselRecognizer vesselImage;
         int index;
         StreamWriter sw = File.AppendText("outout.json");
         public Form1()
@@ -62,6 +63,11 @@ namespace ISeeYou
             currentEntry.dir = Path.GetDirectoryName(path);
             currentEntry.name = Path.GetFileName(path);
             Image image = Image.FromFile(path);
+            
+            // Przekazanie obrazku do VesselRecognition
+            vesselImage = new VesselRecognizer(path);
+            
+
             currentEntry.size = image.Size;
             return image;
         }
@@ -125,5 +131,9 @@ namespace ISeeYou
             sw.WriteLine(json);
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.vesselImage.recognizeVessel();
+        }
     }
 }
