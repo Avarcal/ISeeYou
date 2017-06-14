@@ -99,8 +99,10 @@ namespace ISeeYou
             CvInvoke.NamedWindow("VeinsWithouthCircle", NamedWindowType.FreeRatio);
             CvInvoke.Imshow("VeinsWithouthCircle", VeinsWithouthCircle);
 
-            VectorOfColorPoint countours = new VectorOfColorPoint();
-            VectorOfByte hierarchy = new VectorOfByte();
+           // VectorOfColorPoint countours = new VectorOfColorPoint();
+            VectorOfVectorOfPoint countours = new VectorOfVectorOfPoint();
+            Mat hierarchy =  new Mat();
+           // VectorOfByte hierarchy = new VectorOfByte();
 
             //Tu się wypierdala ścierwo... wklejam Ci kod z C++ który działa 
 
@@ -135,12 +137,12 @@ namespace ISeeYou
             for (int i = 0; i < countours.Size; i++)
             {
                 Random rnd = new Random(255);
-                MCvScalar color = new MCvScalar(System.Convert.ToDouble(rnd), System.Convert.ToDouble(rnd), System.Convert.ToDouble(rnd));
+                MCvScalar color = new MCvScalar(0, 255, 0);
                 
-                {
-                    
+                if (countours[i].Size > 15){
+                    CvInvoke.DrawContours(DrawImage, countours, i, color, 1, LineType.EightConnected, hierarchy);
                 }
-                CvInvoke.DrawContours(DrawImage, countours, i, color, 1, LineType.EightConnected, hierarchy);
+               // CvInvoke.DrawContours(DrawImage, countours, i, color, 1, LineType.EightConnected, hierarchy);
             }
 
 
